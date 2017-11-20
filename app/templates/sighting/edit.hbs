@@ -1,0 +1,24 @@
+<h1>Edit Sighting</h1>
+  <small>
+    {{model.sighting.location}} - {{moment-from model.sighting.sightedAt}}
+  </small>
+<form {{action "update" on="submit"}}>
+  <div class="form-group">
+    <label for="name">Cryptid</label>
+    {{input value=model.sighting.cryptid.name type="text" class="form-control" name="location" disabled="true"}}
+  </div>
+  <div class="form-group">
+    <label>Witnesses</label>
+    {{#each model.witnesses as |witness|}}
+      {{input value=witness.fullName type="text" class="form-control" name="location" disabled="true"}}
+    {{/each}}
+  </div>
+  <div class="form-group">
+    <label for="location">Location</label> {{input value=model.sighting.location type="text" class="form-control" name="location" required=true}}
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Create</button>
+  <button {{action 'cancel'}} class="btn btn-link btn-block">Cancel</button>
+
+  <hr>
+  <button {{action 'delete'}} class="btn btn-block btn-danger">Delete</button>
+</form>
