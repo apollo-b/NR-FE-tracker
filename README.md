@@ -1,7 +1,6 @@
 # Tracker
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Tracker helps users track sightings of rare creatures. Add, search, and update sightings of your favorite Cryptids with Tracker. This README outlines the details of collaborating on this Ember application.
 
 ## Prerequisites
 
